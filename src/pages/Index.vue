@@ -1,17 +1,21 @@
 <template>
   <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
-    >
+    <v-html>
+        <h3>Welcome!</h3>
+          <p>
+            <img
+              alt="Oli Logo"
+              src="~assets/Oli_Pic1.jpg"
+              style="width: 500px; height: 500px"
+            />
+          </p>
+    </v-html>
   </q-page>
 </template>
 
 <script>
-import { defineComponent } from 'vue';
-
+import { defineComponent } from "vue";
 export default defineComponent({
-  name: 'PageIndex'
-})
+  name: "PageIndex",
+});
 </script>

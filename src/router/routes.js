@@ -1,10 +1,16 @@
 
+import MainLayout from 'layouts/MainLayout.vue'
+import MainPage from 'pages/Index.vue'
+import InfoPage from 'pages/Info.vue'
+import GalleryPage from 'pages/Gallery.vue'
+
 const routes = [
   {
-    path: '/',
-    component: () => import('layouts/MainLayout.vue'),
+    path: '', component: MainLayout,
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { path: '', component: MainPage},
+      { path: '/info', component: InfoPage},
+      { path: '/gallery', component: GalleryPage}
     ]
   },
 
